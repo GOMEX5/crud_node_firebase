@@ -1,0 +1,1 @@
+export GOOGLE_APPLICATION_CREDENTIALS="/home/gomex/Documentos/proyectos/firebase-node/node-firebase-example-b71ae-firebase-adminsdk-vw7a5-88d2c9423f.json"

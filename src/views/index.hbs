@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col-12 table-responsive">
+            <table class="table table-bordered table-hover animate__bounceIn bg-white">
+                <thead>
+                    <tr class="bg-dark text-white">
+                        <th>ID</th>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#if contacts}}
+                    {{#each contacts}}
+                    <tr>
+                        <td>{{@key}}</td>
+                        <td>{{firstname}}</td>
+                        <td>{{lastname}}</td>
+                        <td>{{email}}</td>
+                        <td>{{phone}}</td>
+                        <td>
+                            <a href="/delete-contact/{{@key}}" class="btn btn-danger"><i class="fas fa-trash"></i>
+                                Borrar</a>
+                            <a href="/update/{{@key}}" class="btn btn-info"><i class="fas fa-pen"></i>
+                                Editar</a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                    {{/if}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
